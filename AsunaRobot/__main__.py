@@ -82,7 +82,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Makima To Your Group ➕️", url="t.me/MakimaNayutaBot?startgroup=true"
+            text="➕️ Add Me To Your Group ➕️", url="t.me/OppaiiRobot?startgroup=true"
         ),
     ],
     [
@@ -100,7 +100,7 @@ buttons = [
 
 HELP_STRINGS = """
 Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
-⚙️ All commands can either be used with / or !.
+⚙️ All commands can either be used with `/` or `!`.
 ⚙️ Join my Update Channel: @MakimaUpdate
 """
 
