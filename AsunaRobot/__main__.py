@@ -74,58 +74,40 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🧚‍♀️](https://telegra.ph/file/7274507d4da6ff6f3785d.mp4) `My name is` *Asuna*
-`I am powerful  group management bot.
-Build by The Ghost Hunter for Your Telegram Group , I specialize in managing Entertainment type groups.
-You can find my list of available commands with! Hit` *🔰Commands*   
+────「 [Oppaii Robot](https://telegra.ph/file/a67b3bd64437cf3a9c573.png) 」────
+*Hey there!*
+*I am an anime themed based powerful bot with a lot of Sexy Features. Feel free to add me to your group!*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/My_Asuna_Robot?startgroup=true"
+            text="➕️ Add Makima To Your Group ➕️", url="t.me/MakimaNayutaBot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="❗ ABOUT", callback_data="asuna_"),
-        InlineKeyboardButton(text="🔰 COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="❕ About", callback_data="asuna_"),
+        InlineKeyboardButton(text="⚙️ Help & Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(
-            text="🤴 OWNER", url="https://telegram.dog/The_Ghost_Hunter"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="📺 Star Wolrd Entertainment",
-            url="https://telegram.dog/fire_world_entertainment",
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="🗨️ Logis", url="https://t.me/AsunaLogUpdate"),
-        InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://telegram.dog/AsunaRobotSupport"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="💾 Source Code", url="https://github.com/HuntingBots/AsunaRobot"
+        InlineKeyboardButton(text="[► Logs ◄]", url="https://t.me/MakimaLog"),
+        InlineKeyboardButton(text="[► Updates ◄]", url="https://telegram.dog/MakimaUpdate"),
+        InlineKeyboardButton(text="[► Owner ◄]", url="https://t.me/Saltam4"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Asuna ⚙️]("https://telegra.ph/file/8cab4bb122cf76702b06d.jpg") 
-`Click on the buttons below to get documentation about specific modules..`"""
+Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png") .
+⚙️ All commands can either be used with / or !.
+⚙️ Join my Update Channel: @MakimaUpdate
+"""
 
 
 ASUNA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249b4.png"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @The_Ghost_Hunter\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """No need, we are happy with your love and support! 😉"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -209,7 +191,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="⬅️ BACK", callback_data="help_back"
+                                    text="[► Back ◄]", callback_data="help_back"
                                 )
                             ]
                         ]
