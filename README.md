@@ -1,24 +1,19 @@
-## 🌟[AsunaRobot](https://telegram.dog/My_Asuna_Robot)🌟
-### Telegram Group Manager Bot Written In Python Using Telethon+Pyrogram.
-
 <p align="center">
-    <a href="https://github.com/HuntingBots/AsunaRobot/stargazers"><img src="https://img.shields.io/github/stars/HuntingBots/AsunaRobot?label=Stars&style=flat-square&logo=github&color=teal" alt="Stars" /></a>
+  <img src="https://telegra.ph/file/9eb2571bd6f5838ad41aa.png">
 </p>
-
- <a href="http://t.me/My_Asuna_Robot" alt="AsunaRobot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-AsunaRobot On Telegram!-blue" /> </a>
 
 
 <p align="center">
-    <a href="https://github.com/HuntingBots/AsunaRobot"> <img src="https://img.shields.io/github/repo-size/HuntingBots/AsunaRobot?color=fuchsia&logo=github&logoColor=red&style=for-the-badge" /></a>
-    <a href="https://github.com/HuntingBots/AsunaRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/HuntingBots/AsunaRobot?color=indigo&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/HuntingBots/AsunaRobot/issues"> <img src="https://img.shields.io/github/issues/HuntingBots/AsunaRobot?color=green&logo=github&logoColor=yellow&style=for-the-badge" /></a>
-    <a href="https://github.com/HuntingBots/AsunaRobot/network/members"> <img src="https://img.shields.io/github/forks/HuntingBots/AsunaRobot?color=olive&logo=github&logoColor=maroon&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=aqua&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
+    <a href="https://github.com/SAlTAM4/AsunaRobot"> <img src="https://img.shields.io/badge/Repo%20size-2.29%20MB-%234fccff?style=for-the-badge&logo=appveyor" /></a>
+    <a href="https://github.com/SAlTAM4/AsunaRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Saltam4/AsunaRobot?color=2ec2ff&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/SAlTAM4/AsunaRobot/issues"> <img src="https://img.shields.io/github/issues/HuntingBots/AsunaRobot?color=06b6ff&logo=github&logoColor=yellow&style=for-the-badge" /></a>
+    <a href="https://pypi.org/project/telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=16bbff&label=telethon&logo=python&logoColor=007fb3&style=for-the-badge" /></a>
+    <a href="https://https://github.com/SAlTAM4/"> <img src="https://img.shields.io/badge/Bot%20Owner-Saitama-%2300adf4?style=for-the-badge&logo=appveyor" /></a>
 </p>
 
-<p align="center">
-  <img src="https://telegra.ph/file/4977514f30ff13c11363b.jpg">
-</p>
+# OppaiiRobot
+Telegram Group Manager Bot Written In Python Using Telethon+Pyrogram.
+
 
 ## Requirements
 
@@ -33,20 +28,17 @@
 ### Easiest Way To Deploy On Heroku 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HuntingBots/AsunaRobot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Saltam4/OppaiiRobot/)
 
 ```
 
-This Bot is Created by The_Ghost_Hunter, If your kanging this without fork at least give a credit to get a smile of my hard work.
- 
-👉 YoneRobot
-👉 SaitamaRobot 
-👉 TheRealPhoenixBot
-👉 DaisyX 
-👉 WilliamButcherBot
+This Bot is Created by Saitama, If your kanging this without fork at least give a credit to get a smile of my hard work.
 
+• AsunaRobot
+• SaitamaRobot
+• MakimaNayutaBot
 
-$ git clone https://github.com/HuntingBots/AsunaRobot
+$ git clone https://github.com/Saltam4/OppaiiRobot
 
 ```
 
@@ -55,7 +47,7 @@ $ git clone https://github.com/HuntingBots/AsunaRobot
 ## Note
 
 
-* [The Ghost Hunter](https://telegram.dog/The_Ghost_Hunter)
-* [Support](https://telegram.dog/AsunaRobotSupport)
-* [Discussion](https://telegram.dog/helpcentrebot1)
-* [Second Group](https://telegram.dog/fire_world_entertainment)
+* [Saitama](https://telegram.dog/SAlTAM4)
+* [Support Chat](https://telegram.dog/MakimaChat)
+* [Update Channel](https://telegram.dog/MakimaUpdate)
+* [Logs Channel](https://telegram.dog/MakimaLog)
