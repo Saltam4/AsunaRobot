@@ -12,10 +12,10 @@ from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
-kayo_btn = "Kayo 🏴‍☠️"
+tpx_btn = "Tpx 🏴‍☠️"
 prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
-close_btn = "Close ❌"
+close_btn = "[► Back ◄]"
 
 
 def shorten(description, info="anilist.co"):
@@ -520,16 +520,16 @@ def site_search(update: Update, context: CallbackContext, site: str):
             result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
 
     elif site == "kayo":
-        search_url = f"https://animekayo.com/?s={search_query}"
+        search_url = f"https://hindisub.com/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {"class": "title"})
 
-        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>: \n"
+        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>HindiSub</code>: \n"
         for entry in search_result:
 
             if entry.text.strip() == "Nothing Found":
-                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>"
+                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>HindiSub</code>"
                 more_results = False
                 break
 
@@ -557,21 +557,21 @@ def kaizoku(update: Update, context: CallbackContext):
 
 
 def kayo(update: Update, context: CallbackContext):
-    site_search(update, context, "kayo")
+    site_search(update, context, "tpx")
 
 
 __help__ = """
 Get information about anime, manga or characters from [AniList](anilist.co).
 *Available commands:*
- • `/anime <anime>`*:* returns information about the anime.
- • `/character <character>`*:* returns information about the character.
- • `/manga <manga>`*:* returns information about the manga.
- • `/user <user>`*:* returns information about a MyAnimeList user.
- • `/upcoming`*:* returns a list of new anime in the upcoming seasons.
- • `/kaizoku <anime>`*:* search an anime on animekaizoku.com
- • `/kayo <anime>`*:* search an anime on animekayo.com
- • `/airing <anime>`*:* returns anime airing info.
- • /whatanime - reply to gif or video
+ • /anime <anime> *:* information about the anime.
+ • /character <character> *:* information about the character.
+ • /manga <manga> *:* information about the manga.
+ • /user <user> *:* information about a MyAnimeList user.
+ • /upcoming *:* a list of new anime in the upcoming seasons.
+ • /kaizoku <anime> *:* search an anime on animekaizoku.com
+ • /tpx <anime> *:* search an anime on Hindisub.com
+ • /airing <anime> *:* returns anime airing info.
+ • /whatanime *:* reply to gif or video
  """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
@@ -581,7 +581,7 @@ MANGA_HANDLER = DisableAbleCommandHandler("manga", manga, run_async=True)
 USER_HANDLER = DisableAbleCommandHandler("user", user, run_async=True)
 UPCOMING_HANDLER = DisableAbleCommandHandler("upcoming", upcoming, run_async=True)
 KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku, run_async=True)
-KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo)
+TPX_SEARCH_HANDLER = DisableAbleCommandHandler("tpx", tpx)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern="anime_.*", run_async=True)
 
 dispatcher.add_handler(BUTTON_HANDLER)
@@ -591,7 +591,7 @@ dispatcher.add_handler(MANGA_HANDLER)
 dispatcher.add_handler(AIRING_HANDLER)
 dispatcher.add_handler(USER_HANDLER)
 dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
-dispatcher.add_handler(KAYO_SEARCH_HANDLER)
+dispatcher.add_handler(TPX_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
 __mod_name__ = "Anime"
@@ -603,7 +603,7 @@ __command_list__ = [
     "upcoming",
     "kaizoku",
     "airing",
-    "kayo",
+    "tpx",
 ]
 __handlers__ = [
     ANIME_HANDLER,
@@ -612,7 +612,7 @@ __handlers__ = [
     USER_HANDLER,
     UPCOMING_HANDLER,
     KAIZOKU_SEARCH_HANDLER,
-    KAYO_SEARCH_HANDLER,
+    TPX_SEARCH_HANDLER,
     BUTTON_HANDLER,
     AIRING_HANDLER,
 ]
