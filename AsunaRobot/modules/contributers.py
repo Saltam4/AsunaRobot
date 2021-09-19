@@ -8,11 +8,11 @@ async def give_repo(c, m):
     g = github.Github()
     list_of_users = ""
     count = 0
-    repo = g.get_repo("HuntingBots/AsunaRobot")
+    repo = g.get_repo("Saltam4/OppaiiRobot")
     for i in repo.get_contributors():
         count += 1
         list_of_users += f"*{count}.* [{i.login}](https://github.com/{i.login})\n"
-    text = f"""[Github](https://github.com/HuntingBots/AsunaRobot) | [support group](https://t.me/AsunaRobotSupport)
+    text = f"""[Github](https://github.com/Saltam4/OppaiiRobot) | [support group](https://t.me/MakimaChat)
 ```----------------
 | Contributors |
 ----------------```
