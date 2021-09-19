@@ -77,6 +77,9 @@ PM_START_TEXT = """
 ────「 [Oppaii Robot](https://telegra.ph/file/a67b3bd64437cf3a9c573.png) 」────
 *Hey there!*
 *I am an anime themed based powerful bot with a lot of Sexy Features. Feel free to add me to your group!*
+
+
+➥ Try The Help Buttons Below To Know My Abilities U>ᴥ<U
 """
 
 buttons = [
@@ -86,13 +89,13 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="❕ About", callback_data="asuna_"),
-        InlineKeyboardButton(text="⚙️ Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="About", callback_data="asuna_"),
+        InlineKeyboardButton(text="Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="[► Logs ◄]", url="https://t.me/MakimaLog"),
-        InlineKeyboardButton(text="[► Updates ◄]", url="https://telegram.dog/MakimaUpdate"),
-        InlineKeyboardButton(text="[► Owner ◄]", url="https://t.me/Saltam4"
+        InlineKeyboardButton(text="📘 Logs", url="https://t.me/MakimaLog"),
+        InlineKeyboardButton(text="🔔 Updates", url="https://telegram.dog/MakimaUpdate"),
+        InlineKeyboardButton(text="💾 Source Code", url="https://t.me/Saltam4"
         ),
     ],
 ]
@@ -107,7 +110,7 @@ Hey boss, I'm [OppaiiRobot]("https://telegra.ph/file/9eb2571bd6f5838ad41aa.png")
 
 ASUNA_IMG = "https://telegra.ph/file/7e61fe06a9c02747249b4.png"
 
-DONATE_STRING = """No need, we are happy with your love and support! 😉"""
+DONATE_STRING = """No need, we are happy with your love and support ^_^"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -382,12 +385,12 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *Asuna*
-                 \nHere is the [Source Code](https://github.com/HuntingBots/AsunaRobot) .""",
+            text=""" Hi, I'm *Oppaii*
+                 \nHere is the [Source Code](https://github.com/Saltam4/OppaiiRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="source_back")]]
+                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
@@ -409,7 +412,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"Contact me in PM to get help of {module.capitalize()} ^_^",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -623,7 +626,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784 and DONATION_LINK:
+        if OWNER_ID != 931530251 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -673,12 +676,12 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "[Yes I'm alive now!](https://telegra.ph/file/fefbe49175499b0646495.mp4)",
+                "[Hey there, I'm alive now U>ᴥ<U](https://telegra.ph/file/f37655e0f9db876a24113.gif)",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                "Bot isn't able to send message to support_chat, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
