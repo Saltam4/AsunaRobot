@@ -519,7 +519,7 @@ def site_search(update: Update, context: CallbackContext, site: str):
             more_results = False
             result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
 
-    elif site == "kayo":
+    elif site == "tpx":
         search_url = f"https://hindisub.com/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
@@ -556,7 +556,7 @@ def kaizoku(update: Update, context: CallbackContext):
     site_search(update, context, "kaizoku")
 
 
-def kayo(update: Update, context: CallbackContext):
+def tpx(update: Update, context: CallbackContext):
     site_search(update, context, "tpx")
 
 
